@@ -19,6 +19,7 @@ function Rating() {
             <Tree/>
             <Tree/>
             <Tree/>
+            <Tree/>
             <div>list of parameters 1</div>
             <div>list of parameters 2</div>
             <div>list of parameters 3</div>
