@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Accordion from "../components/Accordion/Accordion";
 
 const App = () => {
     return (
@@ -15,11 +16,7 @@ const App = () => {
 function Rating() {
     return (
         <div>
-            <Tree/>
-            <Tree/>
-            <Tree/>
-            <Tree/>
-            <Tree/>
+
             <div>list of parameters 1</div>
             <div>list of parameters 2</div>
             <div>list of parameters 3</div>
@@ -30,19 +27,8 @@ function Rating() {
     );
 }
 
-function Accordion() {
-    return (
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
 
-        </div>
-    );
-}
+
 
 function Tree() {
     return (
