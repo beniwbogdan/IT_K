@@ -1,4 +1,6 @@
 import React from "react";
+import AccordionBody from "./AccordionBody/AccordionBody";
+import AccordionEmptyBody from "./AccordionEmptyBody/AccordionEmptyBody";
 
 type AccordionPropsType = {
     title: string,
@@ -6,20 +8,22 @@ type AccordionPropsType = {
 }
 
 function Accordion(props: AccordionPropsType) {
-    return( <>
-        if(props.collapsed === true){
-            <div>
+
+        if(props.collapsed){
+            return(
+            <>
                 <AccordionTitle title={props.title}/>
                 <AccordionEmptyBody/>
-            </div>
+            </>);
         } else {
-            <div>
+            return(
+            <>
                 <AccordionTitle title={props.title}/>
                 <AccordionBody/>
-            </div>
+            </>);
         }
-        </>
-        );
+
+
 //     return(
 //     <>
 //             if(props.collapsed===true){
@@ -46,23 +50,6 @@ function Accordion(props: AccordionPropsType) {
 
         <h2>{props.title}</h2>
 
-        );
-    }
-
-        function AccordionBody() {
-        return (
-
-        <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        </ul>
-        );
-    }
-
-        function AccordionEmptyBody() {
-        return (
-        <div>lol</div>
         );
     }
 
