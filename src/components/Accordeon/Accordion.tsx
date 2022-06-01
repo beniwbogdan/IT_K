@@ -3,8 +3,10 @@ import React from "react";
 function Accordion() {
     return (
         <div>
+
             <AccordionTitle/>
             <AccordionBody/>
+
         </div>
     );
 }
@@ -17,15 +19,13 @@ function AccordionTitle() {
 }
 function AccordionBody() {
     return (
-        <div>
+
             <ul>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
             </ul>
-
-        </div>
     );
 }
 
-export default Accordion
+export default Accordion;
